@@ -151,7 +151,7 @@ const PORTFOLIO = {
   ],
 };
 
-const GEMINI_API_KEY = "AIzaSyAybepMjSsuv8bjwB3B51QE9Tvq2AwNcEU"; 
+const GEMINI_API_KEY = "AIzaSyB9-laEp8iYNoJPi7J0uxeIrn9Po4qxe-Y"; 
 
 const SYSTEM_PROMPT = `You are Alex Rivera's friendly AI portfolio assistant. You know everything about Alex.
 
