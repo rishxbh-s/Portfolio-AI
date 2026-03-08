@@ -1,16 +1,31 @@
-# React + Vite
+Setup Instructions:
+1. Clone the repository
+2. On Terminal run "npm create vite@latest portfolio-app -- --template react"
+3. Then run "cd portfolio-app"
+4. Then run "npm install"
+5. Then run "npm run dev"
+6. Open http://localhost:5173 to view it in the browser
+API configuration:
+Genmini 2.5 Flash Lite
+Architecture Overview:
+                    ┌───────────────────────┐
+                    │       Browser UI      │
+                    │  (Portfolio Website)  │
+                    └──────────┬────────────┘
+                               │
+                        React Components
+                               │
+              ┌────────────────┼────────────────┐
+              │                │                │
+         Portfolio UI       Chatbot UI       Navigation
+              │                │
+              │          Gemini API Layer
+              │                │
+              │         Google Gemini API
+              │
+         Local Data Layer
+        (PORTFOLIO object)
+       It uses a single-page React architecture (SPA) with component-based UI, client-side state management, and a Gemini API integration layer for the AI chatbot. It follows a Vite + React functional component architecture.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+       Live URL Link:https://portfolio-ai-umber-iota.vercel.app/
