@@ -1,13 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
-// ─────────────────────────────────────────────────────────────────────────────
-// GEMINI API KEY — replace with yours from aistudio.google.com
-// ─────────────────────────────────────────────────────────────────────────────
-const GEMINI_API_KEY = "AIzaSyCLxVE-bA_jOA0ZG6uf5qb75F6wyLJ7JJs";
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
-// ─────────────────────────────────────────────────────────────────────────────
-// PORTFOLIO DATA
-// ─────────────────────────────────────────────────────────────────────────────
+
 const DATA = {
   name: "Alex Rivera",
   title: "Full Stack Developer & AI Engineer",
